@@ -1,0 +1,90 @@
+.recipe-page {
+  padding: 40px;
+  background-color: var(--white);
+  width: 740px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border-radius: 24px;
+
+  &__picture {
+    width: 100%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    hr {
+      border-top: 1px solid var(--white-coffee);
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  &__presentation,
+  &__ingredients,
+  &__instructions,
+  &__nutrition {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__timings {
+    padding: 28px;
+    background-color: var(--snow);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    ul {
+      padding-inline-start: 24px;
+    }
+  }
+
+  &__ingredients {
+    ul {
+      padding-left: 24px;
+      line-height: 180%;
+    }
+  }
+
+  &__instructions {
+    ol {
+      padding-left: 24px;
+      line-height: 180%;
+    }
+  }
+
+  &__nutrition {
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      text-align: left;
+    }
+
+    tr {
+      line-height: 40px;
+      border-bottom: 1px solid var(--white-coffee);
+    }
+
+    tr:last-of-type {
+      border: unset;
+    }
+
+    th {
+      font-weight: 400;
+      color: var(--wenge-brown);
+      padding-left: 30px;
+      width: 50%;
+    }
+
+    td {
+      font-weight: 700;
+      color: var(--brandy-red);
+    }
+  }
+}
